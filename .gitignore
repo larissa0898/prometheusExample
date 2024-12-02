@@ -1,0 +1,19 @@
+# Log-Dateien
+*.log
+
+# Volumes
+volumes/
+
+# IDE-spezifische Dateien
+.idea/
+
+# Java-spezifische Dateien
+target/
+*.class
+*.jar
+
+# Sonstige
+*.swp
+
+.docker/
+docker-compose.override.yml

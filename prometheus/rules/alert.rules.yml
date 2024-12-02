@@ -1,0 +1,10 @@
+groups:
+  - name: telegram-alert
+    rules:
+      - alert: telegram-alert
+        expr: api_error_requests_calls_total{status="500"} > 1
+        for: 10s  # Der Zustand muss mindestens 10 Sekunden lang bestehen
+        labels:
+          severity: critical
+        annotations:
+          summary: "Hohe Anzahl an HTTP 500-Fehlern"
