@@ -5,7 +5,7 @@
 volumes/
 
 # IDE-spezifische Dateien
-.idea/
+/.idea/
 
 # Java-spezifische Dateien
 target/
