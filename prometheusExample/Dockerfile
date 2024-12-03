@@ -1,11 +1,16 @@
-# Verwende ein OpenJDK-Image
-FROM openjdk:17-jdk-slim
+FROM maven:3.8.3-openjdk-17 AS build
 
-# Arbeitsverzeichnis im Container setzen
 WORKDIR /app
 
-# Kopiere die JAR-Datei (die du mit `mvn clean package` gebaut hast) in das Arbeitsverzeichnis
-COPY target/prometheus_HA-0.0.1-SNAPSHOT.jar /app/prometheus_HA-0.0.1-SNAPSHOT.jar
+COPY pom.xml .
+COPY src ./src
 
-# Führe die Spring Boot-Anwendung aus
-CMD ["java", "-jar", "prometheus_HA-0.0.1-SNAPSHOT.jar"]
+RUN mvn clean package -DskipTests
+
+FROM openjdk:17-jdk-slim
+
+WORKDIR /app
+
+COPY --from=build /app/target/prometheus_HA-0.0.1-SNAPSHOT.jar app.jar
+
+CMD ["java", "-jar", "app.jar"]

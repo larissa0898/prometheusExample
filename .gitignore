@@ -5,10 +5,10 @@
 volumes/
 
 # IDE-spezifische Dateien
-/.idea/
+.idea/
 
 # Java-spezifische Dateien
-target/
+/target
 *.class
 *.jar
 
@@ -17,3 +17,5 @@ target/
 
 .docker/
 docker-compose.override.yml
+
+HELP.md
