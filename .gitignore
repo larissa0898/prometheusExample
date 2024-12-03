@@ -8,7 +8,7 @@ volumes/
 .idea/
 
 # Java-spezifische Dateien
-/target
+target/
 *.class
 *.jar
 
