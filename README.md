@@ -1,26 +1,38 @@
 # prometheusExample
 
-New:
-`git clone https://github.com/dein-benutzername/datenbanksysteme_ha.git`
-`cd datenbanksysteme_ha`
-`docker-compose up --build`
+## Projektinformationen
+Dieses Projekt zeigt den Einsatz von Prometheus als Monitoring- und Alarmsystem. Um die Funktionalität von Prometheus zu demonstrieren, wurde eine einfache Spring Boot-Anwendung implementiert, die Metriken bereitstellt und als Beispielziel dient.
+Hauptkomponenten:
 
+1. Prometheus:
+        Überwacht die Spring Boot-Anwendung und sammelt Metriken.
+        Ermöglicht das Erstellen von Regeln für Alarme basierend auf den Metriken.
+2. Alertmanager:
+        Benachrichtigt bei ausgelösten Alarmpunkten über Telegram.
+3. Spring Boot-Anwendung:
+        Dient als Beispiel-Service, der Prometheus-kompatible Metriken bereitstellt.
+4. Grafana:
+        Visualisiert die von Prometheus gesammelten Daten in Dashboards.
+5. Docker Compose:
+        Orchestriert die Container für eine einfache Bereitstellung.
 
-Zugriff auf die Dienste:
-  -  Spring Boot App: http://localhost:8080
+## Voraussetzungen
+Stelle sicher, dass du die folgenden Tools installiert hast:
+
+- Docker
+
+## Anwendung
+
+### Projekt starten
+Im Root-Verzeichnis kann die Applikation mit dem Befehl `docker-compose up --build` gestartet werden.
+
+### Zugriff auf die Dienste
+Unter folgenden URLs lässen sind die Systeme erreichbar:
+
+  -  Spring Boot App: 
+        - Get-Route: http://localhost:8080/api/hello
+        - Error-Route: http://localhost:8080/api/error
   -  Grafana: http://localhost:3000 (Standardlogin: admin/admin)
   -  Prometheus: http://localhost:9090
   -  Alertmanager: http://localhost:9093
   -  NodeExporter: http://localhost:9100
-
-
-
-Old:
-
-Grafana runs on http://localhost:3000  `sudo systemctl status grafana-server`
-
-Prometheus runs on http://localhost:9090 and can be started by running `./prometheus --config.file=prometheus.yml`
-
-Spring-application runs on http://localhost:8080
-
-Alertmanager runs on http://localhost:9093 and can be started by running `./alertmanager --config.file=alertmanager.yml`
