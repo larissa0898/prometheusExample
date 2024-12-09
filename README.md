@@ -36,3 +36,4 @@ Unter folgenden URLs lässen sind die Systeme erreichbar:
   -  Prometheus: http://localhost:9090
   -  Alertmanager: http://localhost:9093
   -  NodeExporter: http://localhost:9100
+  - Telegram Alert-Bot: https://t.me/dbs_prometheus_alert_bot
