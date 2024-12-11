@@ -4,16 +4,18 @@
 Dieses Projekt zeigt den Einsatz von Prometheus als Monitoring- und Alarmsystem. Um die Funktionalität von Prometheus zu demonstrieren, wurde eine einfache Spring Boot-Anwendung implementiert, die Metriken bereitstellt und als Beispielziel dient.
 Hauptkomponenten:
 
-1. Prometheus:
+- Prometheus:
         Überwacht die Spring Boot-Anwendung und sammelt Metriken.
         Ermöglicht das Erstellen von Regeln für Alarme basierend auf den Metriken.
-2. Alertmanager:
+- Alertmanager:
         Benachrichtigt bei ausgelösten Alarmpunkten über Telegram.
-3. Spring Boot-Anwendung:
+- Spring Boot-Anwendung:
         Dient als Beispiel-Service, der Prometheus-kompatible Metriken bereitstellt.
-4. Grafana:
+- Node Exporter:
+        Stellt Systemmetriken bereit, wie bspw. die CPU-Auslastung.
+- Grafana:
         Visualisiert die von Prometheus gesammelten Daten in Dashboards.
-5. Docker Compose:
+- Docker Compose:
         Orchestriert die Container für eine einfache Bereitstellung.
 
 ## Voraussetzungen
