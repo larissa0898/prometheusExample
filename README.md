@@ -1,4 +1,4 @@
-# prometheusExample
+# Prometheus-Anwendungsbeispiel
 
 ## Projektinformationen
 Dieses Projekt zeigt den Einsatz von Prometheus als Monitoring- und Alarmsystem. Um die Funktionalität von Prometheus zu demonstrieren, wurde eine einfache Spring Boot-Anwendung implementiert, die Metriken bereitstellt und als Beispielziel dient.
