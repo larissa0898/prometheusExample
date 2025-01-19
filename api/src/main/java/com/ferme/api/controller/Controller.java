@@ -1,4 +1,4 @@
-package com.ferme.learning.prometheus_ha.controller;
+package com.ferme.learning.api.controller;
 
 import io.micrometer.core.annotation.Timed;
 import io.micrometer.core.instrument.Counter;
@@ -17,8 +17,8 @@ public class Controller {
     private final Counter errorCounter;
 
     public Controller(MeterRegistry registry){
-        this.counter = Counter.builder("api.hello.calls")
-                                .description("Total number of hello endpoint calls")
+        this.counter = Counter.builder("api.metrics-test.calls")
+                                .description("Total number of metrics-test endpoint calls")
                 .               register(registry);
         this.errorCounter = Counter.builder("api.error_requests.calls")
                 .description("Total number of error requests endpoint calls")
@@ -27,10 +27,10 @@ public class Controller {
     }
 
     @Timed(value = "api.get_requests", description = "GET request response time")
-    @GetMapping("/hello")
-    public String hello() {
+    @GetMapping("/metrics-test")
+    public String metricsTest() {
         counter.increment();
-        return "Das ist der Prometheus-Test";
+        return "Diese Route dient dazu einfache Metriken für Prometheus zu liefern.";
     }
 
     @Timed(value = "api.error_requests", description = "Error request response time")

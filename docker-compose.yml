@@ -50,10 +50,10 @@ services:
       - ./alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml
 
   # Spring Boot App Service
-  prometheus-example:
+  api:
     build:
-      context: ./prometheusExample  # Der Ordner, in dem sich das Dockerfile für die Spring Boot App befindet
-    container_name: prometheusExample
+      context: api  # Der Ordner, in dem sich das Dockerfile für die Spring Boot App befindet
+    container_name: api
     ports:
       - "8080:8080"
     networks:
