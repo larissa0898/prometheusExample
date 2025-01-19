@@ -1,4 +1,4 @@
-package com.ferme.learning.api.controller;
+package com.ferme.api.controller;
 
 import io.micrometer.core.annotation.Timed;
 import io.micrometer.core.instrument.Counter;

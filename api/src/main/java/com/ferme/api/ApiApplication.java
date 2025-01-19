@@ -1,13 +1,13 @@
-package com.ferme.learning.prometheus_ha;
+package com.ferme.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PrometheusHaApplication {
+public class ApiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PrometheusHaApplication.class, args);
+        SpringApplication.run(ApiApplication.class, args);
     }
 
 }
