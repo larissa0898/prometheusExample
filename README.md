@@ -19,7 +19,7 @@ Hauptkomponenten:
         Orchestriert die Container für eine einfache Bereitstellung.
 
 ## Voraussetzungen
-Stelle sicher, dass du die folgenden Tools installiert hast:
+Folgende Tools sollten vor dem Start der Anwendung installiert sein:
 
 - Docker
 
@@ -29,10 +29,10 @@ Stelle sicher, dass du die folgenden Tools installiert hast:
 Im Root-Verzeichnis kann die Applikation mit dem Befehl `docker-compose up --build` gestartet werden.
 
 ### Zugriff auf die Dienste
-Unter folgenden URLs lässen sind die Systeme erreichbar:
+Unter folgenden URLs sind die Services erreichbar:
 
   -  Spring Boot App: 
-        - Get-Route: http://localhost:8080/api/hello
+        - Get-Route: http://localhost:8080/api/metrics-test
         - Error-Route: http://localhost:8080/api/error
   -  Grafana: http://localhost:3000 (Standardlogin: admin/admin)
   -  Prometheus: http://localhost:9090
