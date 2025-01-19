@@ -1,6 +1,8 @@
 # Base image for Grafana
 FROM grafana/grafana:11.3.1
 
+COPY provisioning /etc/grafana/provisioning
+
 # Set environment variables (optional)
 ENV GF_SECURITY_ADMIN_PASSWORD=admin
 ENV GF_SERVER_HTTP_PORT=3000

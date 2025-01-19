@@ -24,6 +24,8 @@ services:
       - prometheus
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin  # Standardpasswort für Admin
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning
     networks:
       - monitoring-network
 
