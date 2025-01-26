@@ -33,6 +33,8 @@ Dieses Projekt zeigt den Einsatz von Prometheus als Monitoring- und Alarmsystem.
 - Docker Compose:
         Orchestriert die Container für eine einfache Bereitstellung.
 
+![Projektstruktur](images/diagramm.png)
+
 ## Voraussetzungen
 Folgende Tools sollten vor dem Start der Anwendung installiert sein:
 
