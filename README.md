@@ -10,7 +10,7 @@ Dieses Projekt zeigt den Einsatz von Prometheus als Monitoring- und Alarmsystem.
         Ermöglicht das Erstellen von Regeln für Alarme basierend auf den Metriken.
 - Alertmanager:
         Benachrichtigt bei ausgelösten Alarmpunkten über Telegram.
-- Spring Boot-Anwendung:
+- API basierend auf Spring Boot:
         Dient als Beispiel-Service, der Prometheus-kompatible Metriken bereitstellt.
 - Node Exporter:
         Stellt Systemmetriken bereit, wie bspw. die CPU-Auslastung.
