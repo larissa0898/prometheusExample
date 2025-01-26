@@ -50,6 +50,7 @@ Unter folgenden URLs sind die Services erreichbar:
 ### API
 Die Routen der API sehen wie folgt aus:
 ![metrics-test Endpunkt](images/api-metrics-test.png)
+
 ![Error Endpunkt](images/api-error.png)
 
 ### Grafana
