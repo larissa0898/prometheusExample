@@ -145,7 +145,7 @@
           "refId": "A"
         }
       ],
-      "title": "Panel Title",
+      "title": "CPU-Auslastung",
       "type": "timeseries"
     }
   ],
@@ -163,5 +163,6 @@
   "title": "CPU-Auslastung",
   "uid": "beahi5rukidc0b",
   "version": 2,
-  "weekStart": ""
+  "weekStart": "",
+  "refresh": "5s"
 }

@@ -30,7 +30,7 @@ public class Controller {
     @GetMapping("/metrics-test")
     public String metricsTest() {
         counter.increment();
-        return "Diese Route dient dazu einfache Metriken für Prometheus zu liefern.";
+        return "Dieser Endpunk dient dazu Metriken für Prometheus zu liefern.";
     }
 
     @Timed(value = "api.error_requests", description = "Error request response time")
@@ -38,6 +38,8 @@ public class Controller {
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public String error() {
         errorCounter.increment();
-        throw new RuntimeException("Simulierter Serverfehler");
+        return "Ein simulierter Fehler ist aufgetreten. Wenn er ein zweites Mal auftritt, wird ein Alert ausgelöst.";
     }
+    
+    
 }

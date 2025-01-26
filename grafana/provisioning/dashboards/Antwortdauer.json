@@ -145,7 +145,7 @@
           "refId": "A"
         }
       ],
-      "title": "Panel Title",
+      "title": "Antwortdauer",
       "type": "timeseries"
     }
   ],
@@ -163,5 +163,6 @@
   "title": "Antwortdauer",
   "uid": "ceahie66y2eioe",
   "version": 2,
-  "weekStart": ""
+  "weekStart": "",
+  "refresh": "5s"
 }

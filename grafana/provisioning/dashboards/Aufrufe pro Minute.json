@@ -145,7 +145,7 @@
           "refId": "A"
         }
       ],
-      "title": "Panel Title",
+      "title": "Aufrufe pro Minute (metrics-test-Route)",
       "type": "timeseries"
     }
   ],
@@ -163,5 +163,6 @@
   "title": "Aufrufe pro Minute (metrics-test-Route)",
   "uid": "eeahhp4eu7oxsa",
   "version": 2,
-  "weekStart": ""
+  "weekStart": "",
+  "refresh": "5s"
 }

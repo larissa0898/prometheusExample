@@ -145,7 +145,7 @@
           "refId": "A"
         }
       ],
-      "title": "Panel Title",
+      "title": "Durchschnittliche Rate von HTTP-Anfragen pro Sekunde über 5 Minuten",
       "type": "timeseries"
     }
   ],
@@ -163,5 +163,6 @@
   "title": "Durchschnittliche Rate von HTTP-Anfragen pro Sekunde über 5 Minuten",
   "uid": "deahhyqohhq80f",
   "version": 2,
-  "weekStart": ""
+  "weekStart": "",
+  "refresh": "5s"
 }
