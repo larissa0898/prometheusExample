@@ -41,7 +41,7 @@ Folgende Tools sollten vor dem Start der Anwendung installiert sein:
 
 - Docker
 
-Während der Entwicklung dieses Projekt wurden folgende Versionen verwendet:
+Während der Entwicklung dieses Projekts wurden folgende Versionen verwendet:
 - Docker version 27.3.1
 - docker-compose version 1.29.2
 
