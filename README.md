@@ -2,6 +2,7 @@
 
 ## Projektinformationen
 Dieses Projekt zeigt den Einsatz von Prometheus als Monitoring- und Alarmsystem. Um die Funktionalität von Prometheus zu demonstrieren, wurde eine einfache Spring Boot-Anwendung implementiert, die Metriken bereitstellt und als Beispielziel dient.
+
 Hauptkomponenten:
 
 - Prometheus:
@@ -23,10 +24,14 @@ Folgende Tools sollten vor dem Start der Anwendung installiert sein:
 
 - Docker
 
+Während der Entwicklung dieses Projekt wurden folgende Versionen verwendet:
+- Docker version 27.3.1
+- docker-compose version 1.29.2
+
 ## Anwendung
 
 ### Projekt starten
-Im Root-Verzeichnis kann die Applikation mit dem Befehl `docker-compose up --build` gestartet werden.
+Im Root-Verzeichnis kann die Applikation mit dem Befehl `docker-compose up --build` gestartet werden. 
 
 ### Zugriff auf die Dienste
 Unter folgenden URLs sind die Services erreichbar:
@@ -34,7 +39,7 @@ Unter folgenden URLs sind die Services erreichbar:
   -  Spring Boot App: 
         - Get-Route: http://localhost:8080/api/metrics-test
         - Error-Route: http://localhost:8080/api/error
-  -  Grafana: http://localhost:3000 (Standardlogin: admin/admin)
+  -  Grafana: http://localhost:3000/dashboards (Standardlogin: admin/admin)
   -  Prometheus: http://localhost:9090
   -  Alertmanager: http://localhost:9093
   -  NodeExporter: http://localhost:9100
