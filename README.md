@@ -7,6 +7,7 @@
 3. [Anwendung](#anwendung)
     1. [Projekt starten](#projekt-starten)
     2. [Zugriff auf die Dienste](#zugriff-auf-die-dienste)
+    3. [Nutzung der Monitoring-Features](#nutzung-der-monitoring-features)
 4. [Service-Ansichten](#service-ansichten)
     1. [API](#api)
     2. [Grafana](#grafana)
@@ -59,10 +60,20 @@ Unter folgenden URLs sind die Services erreichbar:
   -  Prometheus: http://localhost:9090
   -  Alertmanager: http://localhost:9093
   -  NodeExporter: http://localhost:9100
-  - Telegram Alert-Bot: https://t.me/dbs_prometheus_alert_bot
+  - Telegram-Bot: https://t.me/dbs_prometheus_alert_bot
+
+
+### Nutzung der Monitoring-Features
+Um die verfügbaren Funktionen zu nutzen, muss zunächst der Telegram-Bot aktiviert werden. Hierfür wird der bereitgestellte Link aufgerufen, und die Interaktion mit dem Bot wird gestartet. Nachfolgend können die Endpunkte `/metrics-test` und `/error` aufgerufen werden. Der Endpunkt `/metrics-test` sorgt dafür, dass Metriken gesammelt werden, während der Endpunkt `/error` bei wiederholtem Aufruf einen Alert auslöst.  
+Im Prometheus Web UI können die Alert-Regeln unter dem Reiter `Alerts` eingesehen werden. Nach kurzer Zeit und einer Aktualisierung der Seite wird angezeigt, dass der Alert ausgelöst wurde.  
+Im Alertmanager wird der ausgelöste Alert von Prometheus angezeigt, und es erfolgt eine Benachrichtigung über die definierten Nachrichtenkanäle, in diesem Fall den Telegram-Bot. Kurz nach der Auslösung des Alerts sollte der Bot eine Nachricht mit der entsprechenden Alertmeldung senden.  
+In Prometheus wird der Alert jedoch weiterhin mit dem Status `firing` gelistet. Dies ist normal, da Prometheus den Alert erst dann als gelöst markiert, wenn die Alertregel nicht mehr greift. Die Regel ist so definiert, dass ein Alert ausgelöst wird, sobald der Endpunkt mehr als einmal aufgerufen wurde. Um das System zurückzusetzen, müssen die Container gestoppt und neu gestartet werden.  
+In Grafana können unter dem Reiter `Dashboards` die vorkonfigurierten Dashboards angezeigt werden. Sobald einige Daten gesammelt wurden, erscheinen diese in den Dashboards. Bei Bedarf können auch neue Dashboards erstellt und andere Metriken integriert werden.  
+Im Node Exporter können unter dem Reiter `Metriken` alle verfügbaren Metriken eingesehen werden, die vom Node Exporter bereitgestellt werden.
 
 
 ## Service-Ansichten
+In diesem Abschnitt werden Abbildungen der einzelnen Dienste bereitgestellt, um eine visuelle Orientierung zu ermöglichen, wie das Projekt nach dem Start und der erfolgreichen Inbetriebnahme erscheint.
 ### API
 Endpunkte der API:
 
