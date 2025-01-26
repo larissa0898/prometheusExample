@@ -46,24 +46,25 @@ Unter folgenden URLs sind die Services erreichbar:
   - Telegram Alert-Bot: https://t.me/dbs_prometheus_alert_bot
 
 
-## Endprodukt
+## Service-Ansichten
 ### API
-Die Routen der API sehen wie folgt aus:
+Endpunkte der API:
 
 ![metrics-test Endpunkt](images/api-metrics-test.png)
 
 ![Error Endpunkt](images/api-error.png)
 
 ### Grafana
-Die Seite der vorkonfigurierten Grafana-Dashboards sehen so aus:
+Vorkonfigurierte Grafana-Dashboards:
 ![Grafana Dashboards](images/grafana-dashboards.png)
 
 ### Prometheus
 In der Web UI von Prometheus sind die eingerichteten Alerts zu sehen.
-So sieht ein inaktiver Alert aus:
+
+Inaktiver Alert:
 ![Prometheus inactive](images/prometheus-alert-inactive.png)
 
-So sieht ein Alert aus, der ausgelöst wurde:
+Aktiver Alert (firing):
 ![Prometheus friing](images/prometheus-firing.png)
 
 ### Alertmanager
