@@ -1,5 +1,19 @@
 # Prometheus-Anwendungsbeispiel
 
+## Inhaltsverzeichnis
+
+1. [Projektinformationen](#projektinformationen)
+2. [Voraussetzungen](#voraussetzungen)
+3. [Anwendung](#anwendung)
+    1. [Projekt starten](#projekt-starten)
+    2. [Zugriff auf die Dienste](#zugriff-auf-die-dienste)
+4. [Service-Ansichten](#service-ansichten)
+    1. [API](#api)
+    2. [Grafana](#grafana)
+    3. [Prometheus](#prometheus)
+    4. [Alertmanager](#alertmanager)
+    5. [Node Exporter](#node-exporter)
+
 ## Projektinformationen
 Dieses Projekt zeigt den Einsatz von Prometheus als Monitoring- und Alarmsystem. Um die Funktionalität von Prometheus zu demonstrieren, wurde eine einfache Spring Boot-Anwendung implementiert, die Metriken bereitstellt und als Beispielziel dient.
 
