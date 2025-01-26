@@ -59,7 +59,7 @@ Die Seite der vorkonfigurierten Grafana-Dashboards sehen so aus:
 ![Grafana Dashboards](images/grafana-dashboards.png)
 
 ### Prometheus
-In der Web UI von Prometheus sind die eingerichteten Alerts zu sehen:
+In der Web UI von Prometheus sind die eingerichteten Alerts zu sehen.
 So sieht ein inaktiver Alert aus:
 ![Prometheus inactive](images/prometheus-alert-inactive.png)
 
