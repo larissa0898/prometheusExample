@@ -30,7 +30,7 @@ public class Controller {
     @GetMapping("/metrics-test")
     public String metricsTest() {
         counter.increment();
-        return "Dieser Endpunk dient dazu Metriken für Prometheus zu liefern.";
+        return "Dieser Endpunkt dient dazu Metriken für Prometheus zu liefern.";
     }
 
     @Timed(value = "api.error_requests", description = "Error request response time")
